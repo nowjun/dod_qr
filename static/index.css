@@ -3,9 +3,9 @@
     height: 500px;
     margin: 0 auto;
     text-align: center;
-    margin-top : 190px;
+    padding-top: 190px;
 }
-.indexCon input[type="button"]{
+.indexCon input[type="submit"]{
     width: 98%;
     height: 350px;
     border: none;
@@ -16,10 +16,11 @@
     vertical-align: middle;
     cursor: pointer;
     transition: 0.5s;
+    border-radius: 5px;
 }
 .indexCon div{
     display: inline-block;
-    width: 32%;
+    width: 33%;
     height: 450px;
     float:left;
     vertical-align:center;
@@ -27,11 +28,36 @@
 .indexConPlus div{
     display: block;
     width: 100%;
-    height: 180px;
+    height: 177px;
 }
-.indexConPlus div input[type="button"]{
-    height: 170px;
+.indexConPlus div input[type="submit"]{
+    height: 172px;
 }
-.indexCon input[type="button"]:hover{
+.indexCon input[type="submit"]:hover{
 
+}
+
+.indexConbtn1{
+    background-color: #5E81AC;
+}
+.indexConbtn2{
+    background-color: #88C0D0;
+}
+.indexConbtn3{
+    background-color: #8FBCBB;
+}
+.indexConbtn4{
+    background-color:#81A1C1;
+}
+
+.indexConbtn1:hover{
+   opacity: 0.7;
+}
+.indexConbtn2:hover{
+   opacity: 0.7;
+}
+.indexConbtn3:hover{
+   opacity: 0.7;
+}.indexConbtn4:hover{
+   opacity: 0.7;
 }

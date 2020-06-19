@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
-<div class="mainTop"  >
+<form action="">
+    <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
             <div class="indexTopTitle">
@@ -19,17 +20,17 @@
         </div>
         <div class="indexCon">
             <div class="indexConRent">
-                <input type="button" value="대여"/>
+                <input type="submit" value="대여" class="indexConbtn1"/>
             </div>
             <div class="indexConReturn">
-                <input type="button" value="반납"/>
-            </div>
+                <input type="submit" value="반납" class="indexConbtn2"/> </div>
             <div class="indexConPlus">
-                <div><input type="button" value="학생 등록"/></div>
-                <div><input type="button" value="기자재 등록"/></div>
+                <div><input type="submit" value="학생 등록" class="indexConbtn3" /></div>
+                <div><input type="submit" value="기자재 등록" class="indexConbtn4" /></div>
             </div>
         </div>
     </div>
 </div>
+</form>
 </body>
 </html>
