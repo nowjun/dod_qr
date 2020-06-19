@@ -8,7 +8,7 @@
     border-radius: 7px;
     margin: 5px 0px;
 }
-#bsBig2{
+#bsBig2 #bsform{
     width: 100%;
     float:right;
     text-align: center;
@@ -16,7 +16,7 @@
 }
 
 .bs {
-    width: 70%;
+    width: 80%;
     margin: 0 auto;
     padding-top: 80px;
 }
@@ -24,24 +24,6 @@
     width: 49%;
     display: inline-block;
 }
-.bsbs div#frame {
-    display: none;
-}
-.bsbs canvas {
-    width:100%;
-}
-.bsimage div#frame {
-     width:60%;
-     height:350px;
-     text-align: center;
-     margin: 0 auto;
-     margin-top: 10px;
-}
-
-.bsimage canvas {
-     width:100%;
-}
-
 
 
 .bsleftdone{
@@ -69,17 +51,102 @@
 }
 
 
-.bsnum input[type="text"]{
-    width: 80%;
-    height: 70px;
-    font-size:20px;
+
+#bsnump input[type="text"]{
+    width: 64%;
+    height: 50px;
+    font-size:16px;
+    border-collapse : collapse;
+}
+#bsnump input[type="submit"]{
+    width: 66%;
+    padding: 15px 0px;
+    font-size: 16px;
+}
+#bsnump #bsform {
+    height:280px;
+}
+#bsnump #bsform div{
+    margin: 3px 0px;
 }
 
-#bsnum #bsBig2{
-    float:right;
+
+
+#bsqrp input[type="text"]{
+    width: 64%;
+    height: 50px;
+    font-size:16px;
+    border-collapse : collapse;
+}
+#bsqrp #bsform {
+    height:250px;
 }
 
-#bsnum #bsBig2 div{
+
+
+.bsbs div#frame {
+    display: none;
+}
+.bsbs canvas {
     width:100%;
-    height: 100px;
+}
+.bsimage div#frame {
+     width:100%;
+     height:350px;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 10px;
+}
+.bsimage canvas {
+     width:100%;
+}
+#beimagep input[type="submit"]{
+    width: 80%;
+    padding: 15px 0px;
+    font-size: 16px;
+}
+
+
+
+#bcalp input[type="date"]{
+    width: 64%;
+    height: 50px;
+    font-size:16px;
+    padding: 15px 0px;
+    border-collapse : collapse;
+}
+#bcalp input[type="submit"]{
+    width: 66%;
+    padding: 15px 0px;
+    font-size: 16px;
+}
+#bcalp #bsform {
+    height:280px;
+}
+#bcalp #bsform div{
+    margin: 3px 0px;
+}
+
+
+#bdonep #bsform{
+    text-align: left;
+    color: whitesmoke;
+}
+#bdonep #bsform {
+    height:290px;
+}
+#bdonep #bstitle{
+    font-size: 23px;
+    font-weight: bold;
+}
+#bdonep #bdonem {
+    width: 50%;
+    margin: 0 auto;
+}
+#bdonep #bssub div{
+    font-size: 20px;
+    margin: 7px 0px;
+}
+#bdonep #bssub {
+    margin-top: 20px;
 }
