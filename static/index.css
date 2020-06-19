@@ -1,14 +1,13 @@
 .indexCon{
-    width: 80%;
+    width: 60%;
     height: 500px;
     margin: 0 auto;
     text-align: center;
-    background-color: rgb(0,0,0,0.1);
-    margin-top : 30px;
+    margin-top : 190px;
 }
 .indexCon input[type="button"]{
-    width: 70%;
-    background-color: #8C8C8C;
+    width: 98%;
+    height: 350px;
     border: none;
     color: white;
     padding: 40px 32px;
@@ -16,8 +15,6 @@
     font-size: 16px;
     vertical-align: middle;
     cursor: pointer;
-    border-radius: 10px;
-    opacity: 0.8;
     transition: 0.5s;
 }
 .indexCon div{
@@ -30,5 +27,11 @@
 .indexConPlus div{
     display: block;
     width: 100%;
-    height: 200px;
+    height: 180px;
+}
+.indexConPlus div input[type="button"]{
+    height: 170px;
+}
+.indexCon input[type="button"]:hover{
+
 }
