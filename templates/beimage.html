@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='jsQR.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='camera.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='camera2.js') }}"></script>
 
 </head>
 <body>
@@ -24,15 +24,15 @@
                 <div>대여기간 설정</div>
             </div>
             <div id="bsBig2" class="bsBig">
-                <div>
-                    <input type="text" placeholder="qr코드">
-                </div>
-                <div class="bsbs">
+                <div class="bsimage">
                     <div id="frame">
                         <div id="loadingMessage">
                             🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오
                         </div>
                         <canvas id="canvas"></canvas>
+                    </div>
+                    <div>
+                        <input type="button" value="확인">
                     </div>
                 </div>
             </div>

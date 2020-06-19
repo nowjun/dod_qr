@@ -5,9 +5,6 @@
     <title>Title</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='jsQR.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='camera.js') }}"></script>
-
 </head>
 <body>
 <div style="width:100%;">
@@ -25,15 +22,10 @@
             </div>
             <div id="bsBig2" class="bsBig">
                 <div>
-                    <input type="text" placeholder="qr코드">
+                    <input type="date">
                 </div>
-                <div class="bsbs">
-                    <div id="frame">
-                        <div id="loadingMessage">
-                            🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오
-                        </div>
-                        <canvas id="canvas"></canvas>
-                    </div>
+                <div>
+                    <input type="button" value="확인">
                 </div>
             </div>
         </div>

@@ -1,0 +1,28 @@
+.bsCon {
+    width: 80%;
+    margin: 0 auto;
+    display:inline-block;
+}
+#bsBig1 div{
+    width: 50%;
+    background-color: rgb(0,0,0,0.3);
+}
+.bsBig{
+    width: 30%;
+    display: inline-block;
+}
+.bsbs div#frame {
+    display: none;
+}
+.bsbs canvas {
+    width:100%;
+}
+.bsimage div#frame {
+     width:60%;
+     height:350px;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 10px;
+.bsimage canvas {
+     width:100%;
+}

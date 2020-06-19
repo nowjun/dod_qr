@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
 </head>
 <body>
 <div style="width:100%;">
@@ -10,16 +12,21 @@
         <div class="indexTop">
             대여하기
         </div>
-        <div class="indexCon">
-            <div  class="indexConRent">
-                <input type="button" value="대여" onlick="location.href('bsnum.html')"/>
+        <div class="bsqpCon">
+            <div id="bsqpBig1" class="bsqpBig">
+                <div>학번 입력</div>
+                <div>학생증 QR코드 스캔</div>
+                <div>기자재 바코드 스캔</div>
+                <div>기자재 사진 촬영</div>
+                <div>대여기간 설정</div>
             </div>
-            <div class="indexConReturn">
-                <input type="button" value="반납" onlick="location.href('bsqr.html')"/>
-            </div>
-            <div class="bsqrCon">
-                <div><input type="text" value="학번" onclick="location.replace('bsnum.html')"/></div>
-                <div><input type="button" value="확인"/></div>
+            <div id="bsqpBig2" class="bsqpBig">
+                <div>
+                    <input type="text" value="학번">
+                </div>
+                <div>
+                    <input type="button" value="확인">
+                </div>
             </div>
         </div>
     </div>

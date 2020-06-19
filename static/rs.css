@@ -1,0 +1,28 @@
+.rsCon {
+    width: 80%;
+    margin: 0 auto;
+    display:inline-block;
+}
+#rsBig1 div{
+    width: 50%;
+    background-color: rgb(0,0,0,0.3);
+}
+.rsBig{
+    width: 30%;
+    display: inline-block;
+}
+.rsrs div#frame {
+    display: none;
+}
+.rsrs canvas {
+    width:100%;
+}
+.rsimage div#frame {
+     width:60%;
+     height:350px;
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 10px;
+.rsimage canvas {
+     width:100%;
+}
