@@ -5,7 +5,7 @@
     text-align: center;
     padding-top: 190px;
 }
-.indexCon input[type="submit"]{
+.indexCon input[type="button"]{
     width: 98%;
     height: 350px;
     border: none;
@@ -30,7 +30,7 @@
     width: 100%;
     height: 177px;
 }
-.indexConPlus div input[type="submit"]{
+.indexConPlus div input[type="button"]{
     height: 172px;
 }
 .indexCon input[type="submit"]:hover{
