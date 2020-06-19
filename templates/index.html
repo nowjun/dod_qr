@@ -4,11 +4,28 @@
     <meta charset="UTF-8">
     <title>Inno</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='index.css') }}">
 </head>
 <body>
-<div>
-    <div class="index-btn">aaa</div>
-    <div class="index-btn">bbb</div>
+<div style="width:100%;">
+    <div class="indexMain">
+        <div class="indexTop">
+            실습 기자재 관리 시스템
+        </div>
+        <div class="indexCon">
+            <div  class="indexConRent">
+                <input type="button" value="대여"/>
+            </div>
+            <div class="indexConReturn">
+                <input type="button" value="반납"/>
+            </div>
+            <div class="indexConPlus">
+                <div><input type="button" value="학생 등록"/></div>
+                <div><input type="button" value="기자재 등록"/></div>
+            </div>
+        </div>
+    </div>
+
 </div>
 </body>
 </html>

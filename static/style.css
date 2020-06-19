@@ -1,11 +1,7 @@
-body {
-    background-color: #2E3440;
-}
 .index-btn {
     margin: 10em;
     width: 10em;
     height: 10em;
-    background-color: aliceblue;
     border-radius: 1em;
     text-align: center;
 }
