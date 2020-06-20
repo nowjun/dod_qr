@@ -7,7 +7,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='rs.css') }}">
     <script type="text/javascript" src="{{ url_for('static', filename='jsQR.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='camera.js') }}"></script>
+<!--    <script type="text/javascript" src="../static/camera.js"></script>-->
+<!--    <script type="text/javascript" src="../static/jsQR.js"></script>-->
 
+<!--    <link rel="stylesheet" href="../static/style.css">-->
+<!--    <link rel="stylesheet" href="../static/rs.css">-->
 </head>
 <body>
 <form action="">
@@ -21,21 +25,23 @@
 
             </div>
         </div>
-        <div class="rs">
+        <div class="rs" id="reimagep">
             <div id="rsBig1" class="rsBig">
-                <div>기자재 QR코드 스캔</div>
-                <div>기자재 사진 촬영</div>
+                <div class="rsleftdone">기자재 QR코드 스캔</div>
+                <div class="rsleftdo">기자재 사진 촬영</div>
             </div>
             <div id="rsBig2" class="rsBig">
                 <div class="rsimage">
-                    <div id="frame">
-                        <div id="loadingMessage">
+                    <div  id="rsform">
+                        <div id="frame">
+                            <div id="loadingMessage">
                             🎥 비디오 스트림에 액세스 할 수 없습니다<br/>웹캠이 활성화되어 있는지 확인하십시오
+                            </div>
+                            <canvas id="canvas"></canvas>
                         </div>
-                        <canvas id="canvas"></canvas>
-                    </div>
-                    <div>
-                        <input type="submit" value="확인">
+                        <div id="reimageb">
+                            <input type="submit" value="확인">
+                        </div>
                     </div>
                 </div>
             </div>

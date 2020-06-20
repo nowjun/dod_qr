@@ -5,8 +5,10 @@
     <title>Title</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='cal.js') }}"></script>
+
 </head>
-<body>
+<body onload="build();">
 <form action="{{  url_for( 'bdone' ) }}">
     <div class="mainTop"  >
     <div class="indexMain">
@@ -29,10 +31,28 @@
             <div id="bsBig2" class="bsBig bcal">
                 <div id="bsform">
                     <div>
-                        <input type="date">
+                        <table align="center" id="calendar">
+                            <tr id="bcaltr">
+                                <td><label onclick="beforem()" id="before" ></label></td>
+                                <td colspan="5" align="center" id="yearmonth"></td>
+                                <td><label onclick="nextm()" id="next"></label></td>
+                            </tr>
+                            <tr>
+                                <td align="center"> <font color="red">일</font></td>
+                                <td align="center"> 월 </td>
+                                <td align="center"> 화 </td>
+                                <td align="center"> 수 </td>
+                                <td align="center"> 목 </td>
+                                <td align="center"> 금 </td>
+                                <td align="center"><font color="blue">토</font></td>
+                            </tr>
+                        </table>
                     </div>
-                    <div>
-                        <input type="submit" value="확인">
+                    <div id="bcalpdate">
+                        <input type=date>
+                    </div>
+                    <div id="bcalpsubmit">
+                        <input type="submit">
                     </div>
                 </div>
             </div>

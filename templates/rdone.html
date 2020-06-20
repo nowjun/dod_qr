@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='rs.css') }}">
 
+<!--    <link rel="stylesheet" href="../static/style.css">-->
+<!--    <link rel="stylesheet" href="../static/rs.css">-->
 </head>
 <body>
 <form action="">
@@ -19,15 +21,21 @@
 
             </div>
         </div>
-        <div class="rs">
+        <div class="rs" id="rdonep">
             <div id="rsBig1" class="rsBig">
-                <div>기자재 QR코드 스캔</div>
-                <div>기자재 사진 촬영</div>
+                <div class="rsleftdone">기자재 QR코드 스캔</div>
+                <div class="rsleftdone">기자재 사진 촬영</div>
             </div>
             <div id="rsBig2" class="rsBig">
-                <div>
-                </div>
-                <div>
+                <div id="rsright">
+                    <div id="rsrtitle">
+                        반납 완료
+                    </div>
+                    <div id="ㄱㄴㄱ">
+                        <div>학번</div>
+                        <div>물품</div>
+                        <div>대여기간</div>
+                    </div>
                 </div>
             </div>
         </div>

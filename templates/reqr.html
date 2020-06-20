@@ -5,9 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='rs.css') }}">
-    <script type="text/javascript" src="{{ url_for('static', filename='jsQR.js') }}"></script>
-    <script type="text/javascript" src="{{ url_for('static', filename='camera.js') }}"></script>
-
+<!--    <link rel="stylesheet" href="../static/style.css">-->
+<!--    <link rel="stylesheet" href="../static/rs.css">-->
 </head>
 <body>
 <form action="">
@@ -21,14 +20,14 @@
 
             </div>
         </div>
-        <div class="rs">
+        <div class="rs" id="reqrp">
             <div id="rsBig1" class="rsBig">
-                <div>기자재 QR코드 스캔</div>
-                <div>기자재 사진 촬영</div>
+                <div class="rsleftdo">기자재 QR코드 스캔</div>
+                <div class="rsleftno">기자재 사진 촬영</div>
             </div>
             <div id="rsBig2" class="rsBig">
-                <div>
-                    <input type="text" placeholder="학생 바코드">
+                <div id="rsform">
+                    <input type="text" placeholder="qr코드">
                 </div>
             </div>
         </div>
