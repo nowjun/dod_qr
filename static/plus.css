@@ -10,6 +10,11 @@
     padding: 20px 5px;
     font-size: 16px;
     opacity: 0.9;
+    border: none;
+    background-color: unset;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+    color: white;
 }
 .plusse input[type="submit"]{
     width: 334px;
@@ -17,6 +22,7 @@
 }
 .plusse input[type=text]:focus {
     opacity: 1;
+    color: white;
 }
 
 #plussp {
