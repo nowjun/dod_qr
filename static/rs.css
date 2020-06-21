@@ -133,6 +133,10 @@
     padding: 15px 0px;
 }
 #rdonep #rsright {
-    padding-top: 120px;
+    padding-top: 70px;
     padding-left: 90px;
+}
+#rdonep #rsrsub input[type="submit"]{
+    width: 230px;
+    padding: 15px 0px;
 }

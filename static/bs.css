@@ -154,7 +154,7 @@ table
     color: whitesmoke;
 }
 #bdonep #bsform {
-    height:310px;
+    height:350px;
 }
 #bdonep #bstitle{
     font-size: 23px;
@@ -177,6 +177,10 @@ table
 }
 #bdonep #bcalpdate {
     margin-top: 30px;
+}
+#bdonep #bssub input[type="submit"]{
+    width: 230px;
+    padding: 15px 0px;
 }
 
 
