@@ -29,6 +29,25 @@ def bcal():
 def bdone():
     return render_template('bdone.html')
 
+@app.route('/pluse')
+def pluse():
+    return render_template('pluse.html')
+
+@app.route('/pluss')
+def pluss():
+    return render_template('pluss.html')
+
+@app.route('/rdone')
+def rdone():
+    return render_template('rdone.html')
+
+@app.route('/reimage')
+def reimage():
+    return render_template('reimage.html')
+
+@app.route('/reqr')
+def reqr():
+    return render_template('reqr.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
