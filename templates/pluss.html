@@ -3,8 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='rs.css') }}">
+
+<!--    <link rel="stylesheet" href="../static/style.css">-->
+<!--    <link rel="stylesheet" href="../static/plus.css">-->
 </head>
 <body>
+<form action="">
+    <div class="mainTop" >
+        <div class="indexMain">
+            <div class="indexTop">
+                <div class="indexTopTitle">
+                    학생 등록
+                </div>
+                <div class="indexToplogo">
 
+                </div>
+            </div>
+            <div class="plusse" id="plussp">
+                <div>
+                    <div>
+                        <input type="text" placeholder="이름">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="학번">
+                    </div>
+                    <div>
+                        <input type="text" placeholder="바코드 입력">
+                    </div>
+                    <div>
+                        <input type="submit" value="확인">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
 </body>
 </html>

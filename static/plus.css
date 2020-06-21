@@ -1,0 +1,27 @@
+.plusse {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+}
+.plusse input{
+}
+.plusse input[type="text"]{
+    width: 320px;
+    padding: 20px 5px;
+    font-size: 16px;
+    opacity: 0.9;
+}
+.plusse input[type="submit"]{
+    width: 334px;
+    padding: 20px 0px;
+}
+.plusse input[type=text]:focus {
+    opacity: 1;
+}
+
+#plussp {
+    margin-top : 200px;
+}
+#plusep{
+    margin-top : 250px;
+}
