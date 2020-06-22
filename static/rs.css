@@ -53,12 +53,7 @@
 
 
 
-#reqrp input[type="text"]{
-    width: 75%;
-    height: 50px;
-    font-size:16px;
-    border-collapse : collapse;
-}
+
 #reqrp #bsform {
     height:250px;
 }
@@ -87,11 +82,7 @@
 .rsimage canvas {
      width:100%;
 }
-#reimagep input[type="submit"]{
-    width: 80%;
-    padding: 15px 0px;
-    font-size: 16px;
-}
+
 #reimagep #rsform{
 }
 #reimagep #reimageb{
@@ -136,7 +127,34 @@
     padding-top: 70px;
     padding-left: 90px;
 }
-#rdonep #rsrsub input[type="submit"]{
-    width: 230px;
-    padding: 15px 0px;
+
+
+
+
+
+
+input[type="text"]{
+    width: 320px;
+    padding: 20px 5px;
+    font-size: 16px;
+    opacity: 0.9;
+    border: none;
+    background-color: unset;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+    color: white;
 }
+input[type=text]:focus {
+    outline: solid 2px #8FBCBB;
+}
+input[type="submit"]{
+    width: 330px;
+    padding: 20px 15px;
+    background-color: #8FBCBB;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+

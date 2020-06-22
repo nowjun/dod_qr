@@ -17,12 +17,16 @@
     color: white;
 }
 .plusse input[type="submit"]{
-    width: 334px;
-    padding: 20px 0px;
+    width: 330px;
+    padding: 20px 15px;
+    background-color: #8FBCBB;
+    border: none;
+    border-radius: 5px;
 }
-.plusse input[type=text]:focus {
-    opacity: 1;
-    color: white;
+
+
+.plusse input[type="text"]:focus {
+    outline: solid 2px #8FBCBB;
 }
 
 #plussp {

@@ -39,29 +39,9 @@
 
 
 
-.bcal input[type="date"]{
-    width: 80%;
-    height: 70px;
-    font-size:20px;
-}
-.bcal input[type="submit"]{
-    width: 80%;
-    height: px;
-}
 
 
 
-#bsnump input[type="text"]{
-    width: 64%;
-    height: 50px;
-    font-size:16px;
-    border-collapse : collapse;
-}
-#bsnump input[type="submit"]{
-    width: 66%;
-    padding: 15px 0px;
-    font-size: 16px;
-}
 #bsnump #bsform {
     height:280px;
 }
@@ -71,18 +51,10 @@
 
 
 
-#bsqrp input[type="text"]{
-    width: 64%;
-    height: 50px;
-    font-size:16px;
-    border-collapse : collapse;
-}
+
 #bsqrp #bsform {
     height:250px;
 }
-
-
-
 .bsbs div#frame {
     display: none;
 }
@@ -99,26 +71,10 @@
 .bsimage canvas {
      width:100%;
 }
-#beimagep input[type="submit"]{
-    width: 80%;
-    padding: 15px 0px;
-    font-size: 16px;
-}
 
 
 
-#bcalp input[type="date"]{
-    width: 64%;
-    height: 30px;
-    font-size:16px;
-    padding: 5px 0px;
-    border-collapse : collapse;
-}
-#bcalp input[type="submit"]{
-    width: 66%;
-    padding: 5px 0px;
-    font-size: 16px;
-}
+
 table
 {
      background-color: white;
@@ -178,11 +134,41 @@ table
 #bdonep #bcalpdate {
     margin-top: 30px;
 }
-#bdonep #bssub input[type="submit"]{
-    width: 230px;
-    padding: 15px 0px;
-}
 
+
+
+input[type="text"]{
+    width: 320px;
+    padding: 20px 5px;
+    font-size: 16px;
+    opacity: 0.9;
+    border: none;
+    background-color: unset;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+    color: white;
+}
+input[type=text]:focus {
+    outline: solid 2px #8FBCBB;
+}
+input[type="date"]{
+    width: 320px;
+    padding: 20px 5px;
+    font-size: 16px;
+    opacity: 0.9;
+    border: none;
+    background-color: unset;
+    border-bottom: solid 1px white;
+    margin-bottom: 5px;
+    color: white;
+}
+input[type="submit"]{
+    width: 330px;
+    padding: 20px 15px;
+    background-color: #8FBCBB;
+    border: none;
+    border-radius: 5px;
+}
 
 
 
