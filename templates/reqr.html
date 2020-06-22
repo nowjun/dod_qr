@@ -8,7 +8,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'reimage' ) }}">
+<form action="{{  url_for( 'reimage' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -16,7 +16,7 @@
                 반납하기
             </div>
             <div class="indexToplogo">
-                <img src="../static/animals.png" alt="">
+                <a href="{{  url_for( 'main' ) }}"><img src="../static/animals.png" alt=""></a>
             </div>
         </div>
         <div class="rs" id="reqrp">
@@ -26,7 +26,7 @@
             </div>
             <div id="rsBig2" class="rsBig">
                 <div id="rsform">
-                    <input type="text" placeholder="qr코드">
+                    <input type="text" value="code" placeholder="qr코드">
                 </div>
             </div>
         </div>

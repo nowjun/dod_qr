@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'beimage' ) }}">
+<form action="{{  url_for( 'beimage' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -18,7 +18,7 @@
                 대여하기
             </div>
             <div class="indexToplogo">
-                <img src="../static/animals.png" alt="">
+                <a href="{{  url_for( 'main' ) }}"><img src="../static/animals.png" alt=""></a>
             </div>
         </div>
         <div class="bs" id="bsqrp">
@@ -31,7 +31,10 @@
             </div>
             <div id="bsBig2" class="bsBig">
                 <div  id="bsform">
-                    <input type="text" placeholder="학생 바코드">
+                    <input type="text" name="code" placeholder="학생 바코드">
+                    {% for key, value in result.items() %}
+                    <input type="hidden" name="{{ key }}" value="{{ value }}">
+                    {% endfor %}
                 </div>
             </div>
         </div>

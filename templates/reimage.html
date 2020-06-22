@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'rdone' ) }}">
+<form action="{{  url_for( 'rdone' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -18,7 +18,7 @@
                 반납하기
             </div>
             <div class="indexToplogo">
-                <img src="../static/animals.png" alt="">
+                <a href="{{  url_for( 'main' ) }}"><img src="../static/animals.png" alt=""></a>
             </div>
         </div>
         <div class="rs" id="reimagep">
@@ -36,6 +36,7 @@
                             <canvas id="canvas"></canvas>
                         </div>
                         <div id="reimageb">
+                            <input type="hidden" name="code" value="{{ code }}" >
                             <input type="submit" value="확인">
                         </div>
                     </div>
