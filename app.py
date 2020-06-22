@@ -1,5 +1,4 @@
 from flask import Flask, render_template
-
 import queries as q
 
 app = Flask(__name__)

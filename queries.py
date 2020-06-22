@@ -25,16 +25,19 @@ def addeq(sno, code, image, ddate):
 def is_dup_sno(sno):
     sql = "SELECT * FROM user WHERE sno = ?"
     values = (sno,)
+
     return execute_bool(sql, values)
 
 def is_dup_eq(code):
     sql = "SELECT * FROM user WHERE code = ?"
     values = (code,)
+
     return execute_bool(sql, values)
 
 def is_code_match(sno, code):
     sql = "SELECT * FROM user WHERE sno = ? AND code = ?"
     values = (sno, code)
+
     return execute_bool(sql, values)
 
 def execute_bool(sql, values):
