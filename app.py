@@ -1,21 +1,8 @@
-from flask import Flask, render_template, g
-import sqlite3
+from flask import Flask, render_template
+
+import queries as q
 
 app = Flask(__name__)
-DATABASE = 'inno.db'
-
-def get_conn():
-    return sqlite3.connect(DATABASE)
-
-def init_conn():
-    conn = get_conn()
-    c = conn.cursor()
-    #sql = "CREATE TABLE equipment (name varchar(100), code varchar(100))"
-    #sql = "CREATE TABLE btable (sno VARCHAR(8), code VARCHAR(8), image BLOB, bdate DATE, ddate DATE)"
-    sql = "INSERT INTO equipment VALUES ('아이패드', '18022300190001')"
-    c.execute(sql)
-    conn.commit()
-    conn.close()
 
 @app.route('/')
 def main():
@@ -68,4 +55,3 @@ def reqr():
 
 if __name__ == '__main__':
     app.run(debug=False)
-    #init_conn()
