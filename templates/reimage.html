@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'rdone' ) }}">
+<form action="{{  url_for( 'rdone' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -36,6 +36,7 @@
                             <canvas id="canvas"></canvas>
                         </div>
                         <div id="reimageb">
+                            <input type="hidden" name="code" value="{{ code }}" >
                             <input type="submit" value="확인">
                         </div>
                     </div>

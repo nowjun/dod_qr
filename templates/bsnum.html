@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
 </head>
 <body>
-<form action="{{  url_for( 'bsqr' ) }}">
+<form action="{{  url_for( 'bsqr' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -29,7 +29,7 @@
             <div id="bsBig2" class="bsBig">
                 <div id="bsform">
                     <div>
-                        <input type="text" placeholder="학번을 입력하세요.">
+                        <input type="text" name="sno" placeholder="학번을 입력하세요.">
                     </div>
                     <div>
                         <input type="submit" value="확인">

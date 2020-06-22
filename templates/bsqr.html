@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'beqr' ) }}">
+<form action="{{  url_for( 'beqr' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
@@ -31,7 +31,10 @@
             </div>
             <div id="bsBig2" class="bsBig">
                 <div id="bsform">
-                    <input type="text" placeholder="qr코드">
+                    <input type="text" name="bsqr" placeholder="qr코드">
+                    {% for key, value in result.items() %}
+                    <input type="hidden" name="{{ key }}" value="{{ value }}">
+                    {% endfor %}
                 </div>
             </div>
         </div>

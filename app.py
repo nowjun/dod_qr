@@ -1,4 +1,4 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, redirect, url_for, request
 import queries as q
 
 app = Flask(__name__)
@@ -11,25 +11,33 @@ def main():
 def bsnum():
     return render_template('bsnum.html')
 
-@app.route('/bsqr')
+@app.route('/bsqr', methods=['POST'])
 def bsqr():
-    return render_template('bsqr.html')
+    result = request.form
+    return render_template('bsqr.html', result=result)
 
-@app.route('/beqr')
+@app.route('/beqr', methods=['POST'])
 def beqr():
-    return render_template('beqr.html')
+    result = request.form
+    return render_template('beqr.html', result=result)
 
-@app.route('/beimage')
+@app.route('/beimage', methods=['POST'])
 def beimage():
-    return render_template('beimage.html')
+    result = request.form
+    return render_template('beimage.html', result=result)
 
-@app.route('/bcal')
+@app.route('/bcal', methods=['POST'])
 def bcal():
-    return render_template('bcal.html')
+    result = request.form
+    return render_template('bcal.html', result=result)
 
-@app.route('/bdone')
+@app.route('/bdone', methods=['POST'])
 def bdone():
-    return render_template('bdone.html')
+    result = request.form
+    print(result)
+    #q.borrow(result['sno'], result['code'], result['image'], result['ddate'])
+    q.borrow(result['sno'], result['code'], None, result['ddate'])
+    return render_template('bdone.html', ddate=result['ddate'], name='아이패드')
 
 @app.route('/pluse')
 def pluse():
@@ -39,11 +47,11 @@ def pluse():
 def pluss():
     return render_template('pluss.html')
 
-@app.route('/rdone')
+@app.route('/rdone', methods=['POST'])
 def rdone():
     return render_template('rdone.html')
 
-@app.route('/reimage')
+@app.route('/reimage', methods=['POST'])
 def reimage():
     return render_template('reimage.html')
 
@@ -51,6 +59,22 @@ def reimage():
 def reqr():
     return render_template('reqr.html')
 
+@app.route('/rdon', methods=['POST'])
+def rdon():
+    return redirect(url_for('main'))
+
+@app.route('/bdon', methods=['POST'])
+def bdon():
+    return redirect(url_for('main'))
+
+@app.route('/psdon', methods=['POST'])
+def psdon():
+    return redirect(url_for('main'))
+
+@app.route('/pedon')
+def pedon():
+    return redirect(url_for('main'))
+
 
 if __name__ == '__main__':
-    app.run(debug=False)
+    app.run(debug=True)

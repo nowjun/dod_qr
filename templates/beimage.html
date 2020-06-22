@@ -10,7 +10,7 @@
 
 </head>
 <body>
-<form action="{{  url_for( 'bcal' ) }}">
+<form action="{{  url_for( 'bcal' ) }}" method="post">
     <div class="mainTop" >
     <div class="indexMain">
         <div class="indexTop">
@@ -39,6 +39,9 @@
                             <canvas id="canvas"></canvas>
                         </div>
                         <div>
+                            {% for key, value in result.items() %}
+                            <input type="hidden" name="{{ key }}" value="{{ value }}">
+                            {% endfor %}
                             <input type="submit" value="확인">
                         </div>
                     </div>
