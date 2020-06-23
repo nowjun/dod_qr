@@ -1,0 +1,32 @@
+#warningp #warnbox #warntext{
+    color: white;
+    font-size: 18px;
+    height: 70px;
+    width: 100%;
+    line-height: 70px;
+}
+#warningp #warnbox {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 230px;
+    border: solid 2px #8FBCBB;
+    padding-bottom: 30px;
+    border-radius: 5px;
+
+}
+
+#warningp #warnbox #warntop{
+    height: 20px;
+    background-color: #8FBCBB;
+}
+
+input[type="submit"]{
+    width: 330px;
+    padding: 20px 15px;
+    background-color: #8FBCBB;
+    border: none;
+    border-radius: 5px;
+}
+
+

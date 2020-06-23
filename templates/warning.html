@@ -3,29 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">-->
     <link rel="stylesheet" href="{{ url_for('static', filename='plus.css') }}">
 
 </head>
 <body>
-<form action="{{  url_for( 'pedone' ) }}" method="post">
+<form action="{{  url_for( 'main' ) }}">
     <div class="mainTop" >
     <div class="indexMain">
         <div class="indexTop">
             <div class="indexTopTitle">
-                기자재 등록
+                경고
             </div>
             <div class="indexToplogo">
-                <a href="{{  url_for( 'main' ) }}"><img src="../static/animals.png" alt=""></a>
+                <img src="../static/animals.png" alt="">
             </div>
         </div>
-        <div class="plusse" id="plusep">
-            <div>
-                <div>
-                    <input type="text" name="name" placeholder="이름">
+        <div class="warning" id="warningp">
+            <div id="warnbox">
+                <div id="warntop">
+
                 </div>
-                <div>
-                    <input type="text" name="code" placeholder="QR코드 입력">
+                <div id="warntext">
+                    경고한다
                 </div>
                 <div>
                     <input type="submit" value="확인">
