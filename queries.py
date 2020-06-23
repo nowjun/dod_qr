@@ -29,7 +29,7 @@ def is_dup_sno(sno):
     return execute_bool(sql, values)
 
 def is_dup_eq(code):
-    sql = "SELECT * FROM user WHERE code = ?"
+    sql = "SELECT * FROM equipment WHERE code = ?"
     values = (code,)
 
     return execute_bool(sql, values)
@@ -39,6 +39,20 @@ def is_code_match(sno, code):
     values = (sno, code)
 
     return execute_bool(sql, values)
+
+def qr_to_eqname(code):
+    sql = "SELECT name FROM equipment WHERE cod = ?"
+
+    return execute_to()
+
+def execute_(sql, values):
+    conn = sqlite3.connect(DATABASE)
+    c = conn.cursor()
+    c.execute(sql, values)
+    result = c.fetchone()
+    conn.close()
+
+    return result is not None
 
 def execute_bool(sql, values):
     conn = sqlite3.connect(DATABASE)

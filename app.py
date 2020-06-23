@@ -1,7 +1,10 @@
 from flask import Flask, render_template, redirect, url_for, request
 import queries as q
+import json
 
 app = Flask(__name__)
+
+warn = 0
 
 @app.route('/')
 def main():
@@ -14,16 +17,23 @@ def bsnum():
 @app.route('/bsqr', methods=['POST'])
 def bsqr():
     result = request.form
+    if not q.is_dup_sno(result['sno']):
+        return render_template('warning.html', message="존재하지 않는 학번입니다.")
     return render_template('bsqr.html', result=result)
 
 @app.route('/beqr', methods=['POST'])
 def beqr():
     result = request.form
+    if not q.is_code_match(result['sno'], result['bsqr'][:32]):
+        return render_template('warning.html', message="학번과 QR코드가 일치하지 않습니다.")
     return render_template('beqr.html', result=result)
 
 @app.route('/beimage', methods=['POST'])
 def beimage():
     result = request.form
+    print(result)
+    if not q.is_dup_eq(result['code']):
+        return render_template('warning.html', message="등록되지 않은 기자재입니다.")
     return render_template('beimage.html', result=result)
 
 @app.route('/bcal', methods=['POST'])
@@ -80,13 +90,8 @@ def psdone():
 @app.route('/pedone', methods=['POST'])
 def pedone():
     result = request.form
-    q.addeq(result['name'], result['code'][:32])
+    q.addeq(result['name'], result['code'])
     return redirect(url_for('main'))
-
-@app.route('/warning', methods=['post', 'get'])
-def warning():
-    return render_template('warning.html')
-
 
 
 if __name__ == '__main__':
