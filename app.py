@@ -49,11 +49,15 @@ def pluss():
 
 @app.route('/rdone', methods=['POST'])
 def rdone():
+    result = request.form
+    print(result)
+    q.retum(result['code'])
     return render_template('rdone.html')
 
 @app.route('/reimage', methods=['POST'])
 def reimage():
-    return render_template('reimage.html')
+    result = request.form
+    return render_template('reimage.html', result=result)
 
 @app.route('/reqr')
 def reqr():
@@ -67,12 +71,16 @@ def rdon():
 def bdon():
     return redirect(url_for('main'))
 
-@app.route('/psdon', methods=['POST'])
-def psdon():
+@app.route('/psdone', methods=['POST'])
+def psdone():
+    result = request.form
+    q.adduser(result['name'], result['sno'], result['code'][:32])
     return redirect(url_for('main'))
 
-@app.route('/pedon')
-def pedon():
+@app.route('/pedone', methods=['POST'])
+def pedone():
+    result = request.form
+    q.addeq(result['name'], result['code'][:32])
     return redirect(url_for('main'))
 
 
