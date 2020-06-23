@@ -7,19 +7,19 @@ def borrow(sno, code, image, ddate):
     values = (sno, code, image, ddate)
     execute(sql, values)
 
-def retum(sno, code, image, ddate):
-    sql = "UPDATE btable SET returned = 1 WHERE sno = ? AND code = ? AND returned = 0"
-    values = (sno, code, image, ddate)
+def retum(code):
+    sql = "UPDATE btable SET returned = 1 WHERE code = ? AND returned = 0"
+    values = (code,)
     execute(sql, values)
 
-def adduser(sno, code, image, ddate):
+def adduser(name, sno, code):
     sql = "INSERT INTO user (name, sno, code) VALUES (?, ?, ?)"
-    values = (sno, code, image, ddate)
+    values = (name, sno, code)
     execute(sql, values)
 
-def addeq(sno, code, image, ddate):
+def addeq(name, code):
     sql = "INSERT INTO equipment (name, code) VALUES (?,?)"
-    values = (sno, code, image, ddate)
+    values = (name, code)
     execute(sql, values)
 
 def is_dup_sno(sno):
