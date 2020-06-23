@@ -83,6 +83,11 @@ def pedone():
     q.addeq(result['name'], result['code'][:32])
     return redirect(url_for('main'))
 
+@app.route('/warning', methods=['post', 'get'])
+def warning():
+    return render_template('warning.html')
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
