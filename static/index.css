@@ -1,12 +1,12 @@
 .indexCon{
-    width: 60%;
+    width: 70%;
     height: 500px;
     margin: 0 auto;
-    text-align: center;
+    text-align:center;
     padding-top: 190px;
 }
 .indexCon input[type="button"]{
-    width: 98%;
+    width: 100%;
     height: 350px;
     border: none;
     color: white;
@@ -18,13 +18,15 @@
     transition: 0.5s;
     border-radius: 5px;
 }
+
 .indexCon div{
     display: inline-block;
-    width: 33%;
     height: 450px;
-    float:left;
+    width: 40%;
     vertical-align:center;
+
 }
+
 .indexConPlus div{
     display: block;
     width: 100%;

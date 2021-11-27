@@ -6,6 +6,7 @@
     line-height: 100px;
     border-radius: 7px;
     margin: 5px 0px;
+    float: left;
 }
 #bsBig2 #bsform{
     width: 100%;
@@ -27,10 +28,10 @@
 
 .bsleftdone{
     background-color:#5E81AC;
-    opacity: 0.8;
+
 }
 .bsleftdo{
-    background-color: #8FBCBB;
+    background-color: #5E81AC;
     width: 92%;
 }
 .bsleftno{
@@ -168,6 +169,7 @@ input[type="submit"]{
     background-color: #8FBCBB;
     border: none;
     border-radius: 5px;
+    margin-top: 33px;
 }
 input[type="password"]{
     width: 320px;
@@ -178,6 +180,7 @@ input[type="password"]{
     background-color: unset;
     border-bottom: solid 1px white;
     margin-bottom: 5px;
+    margin-top: 38px;
     color: white;
 }
 

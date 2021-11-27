@@ -7,32 +7,30 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='bs.css') }}">
 </head>
 <body>
-<form action="{{  url_for( 'bsqr' ) }}" method="post">
+<form action="{{  url_for( 'bdone' ) }}" method="post">
     <div class="mainTop"  >
     <div class="indexMain">
         <div class="indexTop">
             <div class="indexTopTitle">
-                대여하기
+                인증하기
             </div>
             <div class="indexToplogo">
                 <a href="{{  url_for( 'main' ) }}"><img src="../static/animals.png" alt=""></a>
             </div>
         </div>
-        <div class="bs" id="bsnump">
+        <div class="bs" id="bsqrp">
             <div id="bsBig1" class="bsBig">
-                <div class="bsleftdo">학번 입력</div>
-                <div class="bsleftno">학생증 QR코드 스캔</div>
-                <div class="bsleftno">기자재 바코드 스캔</div>
-                <div class="bsleftno">기자재 사진 촬영</div>
-                <div class="bsleftno">대여기간 설정</div>
+                <div class="bsleftdo">학생증 QR코드 스캔</div>
+                <div class="bsleftno">인증 완료</div>
+
             </div>
             <div id="bsBig2" class="bsBig">
                 <div id="bsform">
                     <div>
-                        <input type="text" name="sno" placeholder="학번을 입력하세요.">
-                    </div>
-                    <div>
-                        <input type="submit" value="확인">
+                        <input type="password" name="code" placeholder="qr코드">
+
+                       <input type="hidden" name="{{ key }}" value="{{ value }}">
+
                     </div>
                 </div>
             </div>
